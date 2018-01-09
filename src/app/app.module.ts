@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatListModule, MatGridListModule, MatMenuModule, MatButtonModule, MatCardModule } from '@angular/material'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DishService } from './services/dish.service';
 
 import 'hammerjs';
 
@@ -26,7 +27,8 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
     MatGridListModule,
     MatButtonModule, 
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    DishService
   ],
   providers: [],
   bootstrap: [AppComponent]
