@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatListModule, MatGridListModule, MatMenuModule, MatButtonModule, MatCardModule } from '@angular/material'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DishService } from './services/dish.service';
+import { PromotionService } from './services/promotion.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import 'hammerjs';
@@ -42,7 +43,8 @@ import { ContactComponent } from './contact/contact.component';
     FlexLayoutModule,
     AppRoutingModule    
   ],
-  providers: [ DishService ],
+  providers: [ DishService,
+    PromotionService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
